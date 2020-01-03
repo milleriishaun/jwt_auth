@@ -5,6 +5,7 @@ const dotenvsafe = require("dotenv-safe");
 
 // Import Routes
 const authRoute = require("./routes/auth");
+const postRoute = require("./routes/posts");
 
 if (process.env.NODE_ENV !== "production") {
   dotenvsafe.config();
@@ -27,6 +28,7 @@ app.use(express.json());
 
 // Route Middlewares
 app.use("/api/user", authRoute);
+app.use("/api/posts", postRoute);
 
 app.listen(port, () => {
   console.log(`hello from port 1 ${port}`);

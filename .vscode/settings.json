@@ -1,4 +1,5 @@
 {
+    "io-run.enableAnalytics": false,
     "workbench.colorCustomizations": {
         "activityBar.background": "#3E156F",
         "titleBar.activeBackground": "#571D9B",
